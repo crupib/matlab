@@ -1,8 +1,8 @@
 n = 4;
-t = -n:1:n;
-y1 = [zeros(1,n),1,zeros(1,n)];
+t = -n:0.1:n;
+impulse = t == 0;
 subplot(2,2,1);
-stem(t,y1);
-ylabel('d[n]');
-xlabel('n');
+plot(t,impulse,'r')
+ylabel('d[t]');
+xlabel('t');
 title('Unit impulse function');

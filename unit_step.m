@@ -1,8 +1,8 @@
 n = 4;
-t = 0:1:n;
-y2 = [ones(1,n+1)];
+t = -2:0.1:n;
+unitstep = t >= 0;
 subplot(2,2,2);
-stem(t,y2);
-ylabel('u[n]');
-xlabel('n');
+plot(t,unitstep,'r');
+ylabel('u(t)');
+xlabel('t');
 title('Unit step function');
