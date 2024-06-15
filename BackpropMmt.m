@@ -1,4 +1,4 @@
-function [W1, W2] = BackpropMmt(W1, W2, X, D)
+3ew2function [W1, W2] = BackpropMmt(W1, W2, X, D)
   alpha = 0.9;
   beta  = 0.9;
 
